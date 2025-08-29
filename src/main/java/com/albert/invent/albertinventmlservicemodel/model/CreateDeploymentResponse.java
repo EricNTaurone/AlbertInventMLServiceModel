@@ -10,9 +10,5 @@ import lombok.extern.jackson.Jacksonized;
 @Jacksonized
 public class CreateDeploymentResponse {
   @Nonnull
-  Long deploymentId;
-  @Nonnull
-  Long modelId;
-  @Nonnull
-  Long modelVersion;
+  Deployment deployment;
 }

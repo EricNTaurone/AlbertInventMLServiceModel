@@ -4,9 +4,11 @@ import java.util.List;
 
 import lombok.Builder;
 import lombok.Value;
+import lombok.extern.jackson.Jacksonized;
 
 @Builder
 @Value
+@Jacksonized
 public class ListDeploymentsResponse {
   List<Deployment> deployments;
 }
